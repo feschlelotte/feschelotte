@@ -1,25 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
-  <title>{{ page.title }}</title>
-  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  <title>Archive</title>
+  
   <meta name="author" content="katze">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/themes/bootstrap-3/css/style.css" rel="stylesheet">
 
   <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Josefin+Sans:400,100,300,600,700|Annie+Use+Your+Telescope|Schoolbell|Sue+Ellen+Francisco|Just+Me+Again+Down+Here|Roboto:100,300,400,500|Roboto+Mono:400,100,300,500,700|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
-  <script src="{{ ASSET_PATH }}/bootstrap/js/jquery.min.js"></script>
-  <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-  <script src="{{ ASSET_PATH }}/bootstrap/js/quallen.js"></script>
+  <script src="/assets/themes/bootstrap-3/bootstrap/js/jquery.min.js"></script>
+  <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/themes/bootstrap-3/bootstrap/js/quallen.js"></script>
 
 
-  <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-  <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+  <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
 </head>
 
@@ -36,13 +37,47 @@
 
 
 
-        {{ content }}
+        
+
+
+<div class="row">
+  <div class="col-xs-12">
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+      <h2>2011</h2>
+      <h3>December</h3>
+      <ul>
+    
+  
+    <li><span>December 29, 2011</span> &raquo; <a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
+  
+    
+      </ul>
+    
+  
+
+
+  </div>
+</div>
+
+
 
         <footer class="footer">
             <div class="container">
               <div class="col-sm-12 footer-wrapper">
                 <p>
-                  &copy; {{ site.time | date: '%Y' }} by katze
+                  &copy; 2016 by katze
                 </p>
               </div>
             </div>
@@ -51,9 +86,13 @@
   </div>
 
 
-  {% include JB/analytics %}
+  
+
+
+
 
 
 
 </body>
 </html>
+
