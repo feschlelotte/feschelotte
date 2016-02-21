@@ -1,6 +1,9 @@
-(function($) {
+$(document).ready(function() {
+  console.log('hi')
 
-$('#quallehand').animate({backgroundPositionX: "+=800px"},500,swing)
-
-
-}(jQuery));
+  $('.quallehand').animate({
+    left: '+=800'
+  }, 5000,
+  'swing'
+  )
+})

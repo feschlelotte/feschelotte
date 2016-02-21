@@ -20,130 +20,235 @@ html, body {
   background-color: #a7c6c3;
   font-family: 'champagne_limousines';
   height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -110;
 }
 
 h1, h2, h3, h4 {
   color: #fff;
+  font-family: 'champagne_limousines';
+
 }
 
 .container {
   min-height: 100%;
+  z-index: -110;
+
 }
 
 .footer {
   bottom: 0px;
-  color: #fff;
+  color: #66a0a1;
   position: absolute;
   text-align: center;
 }
 
 .footer-wrapper > p > a {
-  color: #fff;
+  color: #66a0a1;
 }
 
 .row {
   text-align: center;
 }
 
-#frame {
-  width: 602px;
-  height: 602px;
-  top: 80px;
+/* navbar*/
+
+.menue {
+  background-color: inherit;
+  border: none;
+  color: white;
+  margin-top: 40px;
 }
+
+.navbar .nav,
+.navbar .nav > li
+ {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+  color:
+}
+
+.navbar .nav > li > a {
+  color: white;
+  font-size: 2em;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #f3aadb;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #66a0a1;
+    background-color: inherit;
+}
+
+
+/* index*/
+.text-landing > p {
+  font-size: 1.7em;
+  margin-top: 40px;
+}
+
+#logo {
+  width: 300px;
+  top: 20px;
+  left: 50%;
+}
+
 
 /*qualle*/
 .qualle {
-  width: 300px;
   position: absolute;
   z-index: -20;
 }
 
 #quallehand {
-  width: 500px;
-  left: -500px;
+  width: 30%;
+  top: 20px;
+  left:20px;
 }
 
 #quallerose {
-  right: -300px;
-  bottom: -400px;
+  width: 20%;
+  right: 20px;
+  top: 200px;
 }
 
 #qualleblau {
-  right: -300px;
-  bottom: 300px;
+  width: 20%;
+  right: 10%;
+  top: 20px;
 
 }
 
-/*balls*/
-.balls {
-  background-color: #f9ef95;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+.menue-wrapper {
   text-align: center;
-  display: inline-block;
-  padding-top: 40px;
-}
-
-.balls > a {
-  color: #a7c6c3;
-
 }
 
 
 
 
-/* posts index */
-.post > h3.title {
-  position: relative;
-  padding-top: 10px; }
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 1024px) {
+  #quallehand {
+    width: 30%;
+    top: 20px;
+    left:10px;
+  }
 
-.post > h3.title span.date {
-  position: absolute;
-  right: 0;
-  font-size: 0.9em; }
+  #quallerose {
+    width: 20%;
+    right: 5px;
+    top: 150px;
+  }
 
-.post > .more {
-  margin: 10px 0;
-  text-align: left; }
+  #qualleblau {
+    width: 20%;
+    right: 85px;
+    top: 20px;
 
-/* post-full*/
-.post-full .date {
-  margin-bottom: 20px;
-  font-weight: bold; }
+  }
 
-/* tag_box */
-.tag_box {
-  list-style: none;
-  margin: 0;
-  overflow: hidden; }
+  .text-landing > p {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
 
-.tag_box li {
-  line-height: 28px; }
+ }
 
-.tag_box li i {
-  opacity: 0.9; }
+ /* Landscape phone to portrait tablet */
+ @media (max-width: 768px) {
+   #quallehand {
+     width: 30%;
+     top: 20px;
+     left:10px;
+   }
 
-.tag_box.inline li {
-  float: left; }
+   #quallerose {
+     width: 20%;
+     right: 5px;
+     top: 100px;
+   }
 
-.tag_box a {
-  padding: 3px 6px;
-  margin: 2px;
-  background: #eee;
-  color: #555;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 1px dashed #cccccc; }
+   #qualleblau {
+     width: 20%;
+     right: 70px;
+     top: 20px;
 
-.tag_box a span {
-  vertical-align: super;
-  font-size: 0.8em; }
+   }
 
-.tag_box a:hover {
-  background-color: #e5e5e5; }
+   #logo {
+     width: 200px;
+   }
 
-.tag_box a.active {
-  background: #57A957;
-  border: 1px solid #4c964d;
-  color: #FFF; }
+   .text-landing > h2 {
+     font-size: 1.7em;
+     margin-top: 40px;
+   }
+  }
+
+  @media (max-width: 520px) {
+    #quallehand {
+      width: 30%;
+      top: 20px;
+      left:10px;
+    }
+
+    #quallerose {
+      width: 20%;
+      right: 5px;
+      top: 70px;
+    }
+
+    #qualleblau {
+      width: 20%;
+      right: 45px;
+      top: 20px;
+
+    }
+
+    #logo {
+      width: 150px;
+    }
+
+    /* index*/
+    .text-landing > h2 {
+      font-size: 1.5em;
+      margin-top: 40px;
+    }
+   }
+
+   @media (max-width: 375px) {
+     #quallehand {
+       width: 0px;
+       top: 20px;
+       left:10px;
+     }
+
+     #qualleblau {
+       width: 80px;
+       right: 5px;
+       top: 70px;
+     }
+
+     #quallerose {
+       width: 75px;
+       left: 5px;
+       top: 10px;
+
+     }
+
+     #logo {
+       width: 150px;
+     }
+
+     /* index*/
+     .text-landing > h2 {
+       font-size: 1.3em;
+       margin-top: 40px;
+     }
+    }
