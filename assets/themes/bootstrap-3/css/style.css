@@ -88,7 +88,8 @@ h1, h2, h3, h4 {
 
 
 /* index*/
-.text-landing > p {
+.text-landing > p,
+.content > p {
   font-size: 1.7em;
   margin-top: 40px;
 }
@@ -129,7 +130,13 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-
+/* mitmachen*/
+#anmeldebutton {
+  margin-top: 5%;
+  width: 50%;
+  background-color: #66a0a1;
+  border: none;
+}
 
 
 /* Portrait tablet to landscape and desktop */
