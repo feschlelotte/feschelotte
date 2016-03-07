@@ -148,11 +148,18 @@ h2 > a:hover {
 }
 
 /* mitmachen*/
-#anmeldebutton {
+#anmeldebutton,
+.fescher-button {
   margin-top: 5%;
   width: 50%;
   background-color: #66a0a1;
   border: none;
+}
+
+/*AGB*/
+.buttonfeld {
+  display: inline;
+  padding-bottom: 50px;
 }
 
 
