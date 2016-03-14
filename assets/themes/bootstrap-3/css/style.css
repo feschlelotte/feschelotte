@@ -156,6 +156,12 @@ h2 > a:hover {
   border: none;
 }
 
+/*Ort*/
+#ortsbild {
+  width: 50%;
+}
+
+
 /*AGB*/
 .buttonfeld {
   display: inline;
